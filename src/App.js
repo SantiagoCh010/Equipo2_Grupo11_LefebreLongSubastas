@@ -1,38 +1,25 @@
 import './bootstrap.css';
+import React from 'react';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+
 import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
-import Login from './components/Login.js';
+import Home from './components/Home';
+import RegistroUsuario from './components/RegistroUsuario';
 
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />      
-      <div className="d-flex p-2 col-example">
-        <div>
-          <h3>Bienvenidos</h3>
-          <p className="text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?</p>
-            <h3>¿Quienes somos?</h3>
-          <p className= "text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, 
-            repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?</p>
-        </div>
-        <div><Login/></div>        
-      </div>         
+    <div>
+   <Router>
+      <NavBar />  
+      <Routes>   
+      <Route path="/" element={<Home/>}/>
+      <Route path="/RegistroUsuario" element={<RegistroUsuario/>}/>
+      </Routes>
       <Footer />
-    </div>
+   </Router>
+   </div>
   );
 }
 
