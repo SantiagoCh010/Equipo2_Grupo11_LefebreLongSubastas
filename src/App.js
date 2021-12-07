@@ -6,7 +6,7 @@ import NavBar from './components/NavBar.js';
 import Footer from './components/Footer.js';
 import Home from './components/Home';
 import RegistroUsuario from './components/RegistroUsuario';
-
+import HomeAdmon from './components/HomeAdmon'
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
       <Routes>   
       <Route path="/" element={<Home/>}/>
       <Route path="/RegistroUsuario" element={<RegistroUsuario/>}/>
+      <Route path="/HomeAdmon" element={<HomeAdmon/>}/>
+
       </Routes>
       <Footer />
    </Router>
