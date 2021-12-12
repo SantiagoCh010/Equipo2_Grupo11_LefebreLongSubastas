@@ -8,6 +8,9 @@ import Home from './components/Home';
 import RegistroUsuario from './components/RegistroUsuario';
 import HomeAdmon from './components/HomeAdmon'
 import GestionUsuarios from './components/GestionUsuarios'
+import CrearSubasta from './components/CrearSubasta';
+import EditarSubasta from './components/EditarSubasta';
+import HomeSubasta from './components/HomeSubasta';
 
 
 function App() {
@@ -20,6 +23,9 @@ function App() {
       <Route path="/RegistroUsuario" element={<RegistroUsuario/>}/>
       <Route path="/HomeAdmon" element={<HomeAdmon/>}/>
       <Route path="/GestionUsuarios" element={<GestionUsuarios/>}/>
+      <Route path="/CrearSubasta" element={<CrearSubasta/>}/>
+      <Route path="/EditarSubasta" element={<EditarSubasta/>}/>
+      <Route path="/HomeSubasta" element={<HomeSubasta/>}/>
 
 
       </Routes>
