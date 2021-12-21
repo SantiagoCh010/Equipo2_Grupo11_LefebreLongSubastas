@@ -11,6 +11,7 @@ import GestionUsuarios from './components/GestionUsuarios'
 import CrearSubasta from './components/CrearSubasta';
 import EditarSubasta from './components/EditarSubasta';
 import HomeSubasta from './components/HomeSubasta';
+import EliminarSubasta from './components/EliminarSubasta';
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
       <Route path="/CrearSubasta" element={<CrearSubasta/>}/>
       <Route path="/EditarSubasta" element={<EditarSubasta/>}/>
       <Route path="/HomeSubasta" element={<HomeSubasta/>}/>
+      <Route path="/EliminarSubasta" element={<EliminarSubasta/>}/>
+
 
 
       </Routes>
